@@ -34,11 +34,9 @@ CAVE is short for "Connectome Annotation Versioning Engine". It is a system for 
 interacting with, and versioning nanoscale [connectome](https://en.wikipedia.org/wiki/Connectome) data.
 
 What we'll call the CAVE "ecosystem" is a loose collection of software packages and
-services that can be useful for interacting with this data. These packages are maintained
-by a wide variety of people and teams - credit for their development goes to them.
+services that can be useful for interacting with this data.
 
-This site is simply designed as a road map for helping people find the right tools for
-their needs.
+These packages are maintained by a wide variety of people and teams and credit for their development goes to them. We're not claiming all of these packages are developed by us or that these packages are all part of CAVE - this page is just trying to point people to open-source tools that can be useful for working with this connectome data.
 
 ## I want to...
 
