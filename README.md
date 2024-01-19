@@ -17,6 +17,7 @@ Mapping packages and services in the CAVE ecosystem.
     - [Work with saved Neuroglancer states](#work-with-saved-neuroglancer-states)
     - [Programatically generate Neuroglancer links, potentially with annotations](#programatically-generate-neuroglancer-links-potentially-with-annotations)
   - [As a learner...](#as-a-learner)
+    - [View the educational materials from the 2023 SWDB](#view-the-educational-materials-from-the-2023-swdb)
   - [As a data-generator...](#as-a-data-generator)
     - [Guide proofreaders to points of interest in chunkedgraph-based segmentations](#guide-proofreaders-to-points-of-interest-in-chunkedgraph-based-segmentations)
   - [As a developer...](#as-a-developer)
@@ -91,6 +92,10 @@ These packages are maintained by a wide variety of people and teams and credit f
 [NeuroglancerAnnotationUI][]
 
 ### As a learner...
+
+#### View the educational materials from the 2023 SWDB
+
+[SWDB-2023-book][]
 
 ---
 
@@ -203,3 +208,4 @@ flowchart TD
 [PCGL2Cache]: https://github.com/seung-lab/PCGL2Cache
 [PyChunkedGraph]: https://github.com/seung-lab/pychunkedgraph
 [skeleton_plot]: https://github.com/AllenInstitute/skeleton_plot
+[SWDB-2023-book]: https://allenswdb.github.io/microns-em/em-background.html
