@@ -92,11 +92,15 @@ These packages are maintained by a wide variety of people and teams and credit f
 
 ### As a learner...
 
+---
+
 ### As a data-generator...
 
 #### Guide proofreaders to points of interest in chunkedgraph-based segmentations
 
 [Guidebook][]
+
+---
 
 ### As a developer...
 
@@ -123,6 +127,8 @@ These packages are maintained by a wide variety of people and teams and credit f
 #### View the L2 Cache code
 
 [PCGL2Cache][]
+
+---
 
 ## Diagram (WIP)
 
