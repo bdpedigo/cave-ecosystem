@@ -1,6 +1,130 @@
-# cave-ecosystem
+# CAVE ecosystem <!-- omit in toc -->
 
-Mapping packages and services in the CAVE ecosystem
+Mapping packages and services in the CAVE ecosystem.
+
+- [What is the CAVE ecosystem?](#what-is-the-cave-ecosystem)
+- [I want to...](#i-want-to)
+  - [As a user...](#as-a-user)
+    - [Download image data](#download-image-data)
+    - [Download segmentation data](#download-segmentation-data)
+    - [Make nice visualizations of imagery and segmentation](#make-nice-visualizations-of-imagery-and-segmentation)
+    - [Download synapse data](#download-synapse-data)
+    - [Download cell annotations](#download-cell-annotations)
+    - [View the proofreading edit history of neurons](#view-the-proofreading-edit-history-of-neurons)
+    - [Do computations on neuron anatomy data (e.g. skeletons, meshes)](#do-computations-on-neuron-anatomy-data-eg-skeletons-meshes)
+    - [Visualize neuron anatomy data](#visualize-neuron-anatomy-data)
+    - [Create skeletons from PyChunkedGraph segmentations](#create-skeletons-from-pychunkedgraph-segmentations)
+    - [Work with saved Neuroglancer states](#work-with-saved-neuroglancer-states)
+    - [Programatically generate Neuroglancer links, potentially with annotations](#programatically-generate-neuroglancer-links-potentially-with-annotations)
+  - [As a learner...](#as-a-learner)
+  - [As a data-generator...](#as-a-data-generator)
+    - [Guide proofreaders to points of interest in chunkedgraph-based segmentations](#guide-proofreaders-to-points-of-interest-in-chunkedgraph-based-segmentations)
+  - [As a developer...](#as-a-developer)
+    - [View the PyChunkedGraph code](#view-the-pychunkedgraph-code)
+    - [View the Neuroglancer JSON Service code](#view-the-neuroglancer-json-service-code)
+    - [View the Info Service code](#view-the-info-service-code)
+    - [View the EM Annotation Schemas code](#view-the-em-annotation-schemas-code)
+    - [View the Annotation Engine code](#view-the-annotation-engine-code)
+    - [View the L2 Cache code](#view-the-l2-cache-code)
+- [Diagram (WIP)](#diagram-wip)
+
+## What is the CAVE ecosystem?
+
+CAVE is short for "Connectome Annotation Versioning Engine". It is a system for storing,
+interacting with, and versioning nanoscale [connectome](https://en.wikipedia.org/wiki/Connectome) data.
+
+What we'll call the CAVE "ecosystem" is a loose collection of software packages and
+services that can be useful for interacting with this data. These packages are maintained
+by a wide variety of people and teams - credit for their development goes to them.
+
+This site is simply designed as a road map for helping people find the right tools for
+their needs.
+
+## I want to...
+
+### As a user...
+
+#### Download image data
+
+[cloud-volume][]
+
+#### Download segmentation data
+
+[CAVEclient][]
+
+#### Make nice visualizations of imagery and segmentation
+
+[ImageryClient][]
+
+#### Download synapse data
+
+[CAVEclient][]
+
+#### Download cell annotations
+
+[CAVEclient][]
+
+#### View the proofreading edit history of neurons
+
+[CAVEclient][]
+
+#### Do computations on neuron anatomy data (e.g. skeletons, meshes)
+
+[MeshParty][]
+
+[navis][]
+
+#### Visualize neuron anatomy data
+
+[skeleton_plot][]
+
+[navis][]
+
+#### Create skeletons from PyChunkedGraph segmentations
+
+[pcg_skel][]
+
+#### Work with saved Neuroglancer states
+
+[CAVEclient][]
+
+#### Programatically generate Neuroglancer links, potentially with annotations
+
+[NeuroglancerAnnotationUI][]
+
+### As a learner...
+
+### As a data-generator...
+
+#### Guide proofreaders to points of interest in chunkedgraph-based segmentations
+
+[Guidebook][]
+
+### As a developer...
+
+#### View the PyChunkedGraph code
+
+[PyChunkedGraph][]
+
+#### View the Neuroglancer JSON Service code
+
+[NeuroglancerJsonServer][]
+
+#### View the Info Service code
+
+[AnnotationFrameworkInfoService][]
+
+#### View the EM Annotation Schemas code
+
+[EMAnnotationSchemas][]
+
+#### View the Annotation Engine code
+
+[AnnotationEngine][]
+
+#### View the L2 Cache code
+
+[PCGL2Cache][]
 
 ## Diagram (WIP)
 
@@ -58,48 +182,20 @@ flowchart TD
     caveclient --> pcg-skeleton
 ```
 
-## I want to...
-
-### User-facing
-
-#### Download image data
-
-[cloud-volume][]
-
-#### Download segmentation data
-
-[CAVEclient][]
-
-#### Make nice visualizations of imagery and segmentation
-
-[ImageryClient][]
-
-#### Download synapse data
-
-[CAVEclient][]
-
-#### Work with neuron anatomy data (e.g. skeletons, meshes)
-
-[MeshParty][]
-
-[navis][]
-
-#### Create skeletons from PyChunkedGraph segmentations
-
-[pcg_skel][]
-
-#### Programatically generate Neuroglancer links, potenrially with annotations
-
-[NeuroglancerAnnotationUI][]
-
-### Developer-facing
-
 <!-- Package manifest -->
 
+[AnnotationEngine]: https://github.com/seung-lab/AnnotationEngine
+[AnnotationFrameworkInfoService]: https://github.com/seung-lab/AnnotationFrameworkInfoService
 [CAVEclient]: https://github.com/seung-lab/CAVEclient
 [cloud-volume]: https://github.com/seung-lab/cloud-volume
+[EMAnnotationSchemas]: https://github.com/seung-lab/EmAnnotationSchemas
+[Guidebook]: https://github.com/AllenInstitute/Guidebook
 [ImageryClient]: https://github.com/AllenInstitute/ImageryClient
 [MeshParty]: https://github.com/sdorkenw/MeshParty
-[pcg_skel]: https://github.com/AllenInstitute/pcg_skel
-[NeuroglancerAnnotationUI]: https://github.com/seung-lab/NeuroglancerAnnotationUI
 [navis]: https://github.com/navis-org/navis
+[NeuroglancerAnnotationUI]: https://github.com/seung-lab/NeuroglancerAnnotationUI
+[NeuroglancerJsonServer]: https://github.com/seung-lab/NeuroglancerJsonServer
+[pcg_skel]: https://github.com/AllenInstitute/pcg_skel
+[PCGL2Cache]: https://github.com/seung-lab/PCGL2Cache
+[PyChunkedGraph]: https://github.com/seung-lab/pychunkedgraph
+[skeleton_plot]: https://github.com/AllenInstitute/skeleton_plot
